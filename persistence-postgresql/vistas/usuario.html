@@ -1,0 +1,17 @@
+<html lang="es">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Blog</title>
+</head>
+  <body>
+   <h1>Usuario</h1>
+   <h2>{{usuario.nombre}}</h2>
+   <p>{{usuario.email}}</p>
+   <p>Biografia:{{usuario.datosUsuario.biografia}}</p>
+   <h2>articulos de usuarios</h2>
+   {%for articulo in usuario.articulos%}
+     <h3>{{articulo.titulo}}</h3>
+   {%endfor%}
+  </body>
+</html>

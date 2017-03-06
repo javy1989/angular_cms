@@ -1,0 +1,23 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+</head>
+
+<body>
+    <form action="/autentificar" method="POST">
+    {%if error ==true%}
+      USUARIO NO ENCONTRADO!!
+    {%endif%}
+        <div>
+            email:<input name="email" type="text" />
+        </div>
+        <div>
+            password:<input name="password" type="text" />
+        </div>
+        <input type="submit" value="Enviar!!" />
+    </form>
+</body>
+
+</html>
